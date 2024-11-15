@@ -8,6 +8,7 @@ app.set('views', path.join(__dirname, 'views'));
 // Servir archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'scripts'))); // Servir scripts/app.js
+app.use(express.static(path.join(__dirname, 'css')));
 
 app.use('/', require('./routes/myRouter'));
 
